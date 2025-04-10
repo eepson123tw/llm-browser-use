@@ -1,0 +1,207 @@
+
+# Weather Information Task
+task1: |-
+  You are a browser automation agent testing your capabilities with Browser Use.
+  
+  Follow these exact steps:
+  
+  1. Navigate to weather.com
+  2. Accept any cookie prompts or notifications if they appear
+  3. Look for the search box on the homepage
+  4. Type "New York, NY" in the search box and submit
+  5. Wait for the weather forecast to load
+  6. Extract the current temperature
+  7. Extract the 5-day forecast information
+  8. Navigate to the "Hourly" forecast section
+  9. Extract hourly temperature predictions for the next 6 hours
+  10. Create a summary of today's weather in New York
+  11. Compare the high temperature today with the predicted high temperatures for the next 2 days
+  12. Determine if it will rain in the next 24 hours
+  
+  Format your response as follows:
+  Current temperature: [value]
+  Today's high/low: [high]/[low]
+  Weather condition: [condition]
+  Chance of precipitation: [percentage]
+  
+  Next 48 hours summary:
+  [Your summary here]
+  
+  Rain prediction: [Yes/No]
+
+# E-commerce Research Task
+task2: |-
+  You are an AI assistant with Browser Use capabilities.
+  
+  Complete this product research task by following these steps precisely:
+  
+  1. Navigate to Amazon.com
+  2. If you encounter any popups or location prompts, close them or select "Stay on US site"
+  3. Find the search bar at the top of the page
+  4. Type "wireless noise-cancelling headphones" and press Enter
+  5. On the search results page, look for and apply these filters:
+     - Price: $100-$300 range
+     - Customer Review: 4 Stars & Up
+     - Sort by: Featured
+  6. Identify the top 5 product listings from the filtered results
+  7. For each product, extract:
+     - Product name
+     - Brand
+     - Price
+     - Rating (stars)
+     - Number of reviews
+  8. Click on the first product to open its dedicated page
+  9. On the product page, locate and extract:
+     - Battery life
+     - Connectivity technology (Bluetooth, etc.)
+     - Any special features listed
+     - Availability status
+  10. Return to the search results
+  11. Repeat steps 8-10 for the second product
+  12. Create a comparison between these two products
+  13. Based on the comparison, recommend which product offers better value
+  
+  Your final report should include:
+  1. A table comparing all 5 initial products
+  2. A detailed comparison of the two products you examined
+  3. Your recommendation with justification
+  4. Any limitations or issues encountered during your search
+
+# Social Media Analysis Task
+task3: |-
+  You are testing your browser automation capabilities for social media analysis.
+  
+  Complete the following task exactly as instructed:
+  
+  1. Navigate to Twitter/X (https://twitter.com)
+  2. If a login prompt appears, find a way to browse without logging in (look for "Browse" options)
+  3. In the Explore/Trending section, identify the top 3 trending topics or hashtags
+  4. Select the first trending topic
+  5. Scroll down to view at least 10 posts about this topic
+  6. For each post, capture:
+     - Username
+     - Post text content
+     - Approximate post time
+     - Number of likes/replies (if visible)
+     - If the post contains media (image/video)
+  7. Identify the most engaged-with post (highest likes)
+  8. Click on this post to view the conversation thread
+  9. Capture 3-5 replies to this post
+  10. Analyze the general sentiment (positive, negative, neutral) of the posts viewed
+  11. Identify common themes or points of discussion in the posts
+  
+  Your analysis report should include:
+  1. The trending topics you identified
+  2. Summary of 10 posts from the first topic
+  3. Information about the most popular post and responses
+  4. Sentiment analysis results
+  5. Key discussion themes identified
+  6. Any challenges encountered during the analysis
+
+# News Comparison Task
+task4: |-
+  You are evaluating your ability to compare news coverage across different sources.
+  
+  Follow these instructions carefully:
+  
+  1. Open a browser window and navigate to BBC News (https://www.bbc.com/news)
+  2. Identify the top 3 headline stories on the homepage
+  3. For the first headline story, click to read the full article
+  4. Extract the following information:
+     - Headline
+     - Publication date/time
+     - Author (if available)
+     - Main article text
+     - Any featured quotes
+     - Categories/tags (if available)
+  5. Navigate back to the homepage
+  6. Open a new tab and navigate to CNN (https://www.cnn.com)
+  7. Look for a similar story to the one you found on BBC
+  8. If found, extract the same information categories
+  9. Open a third tab and navigate to Al Jazeera (https://www.aljazeera.com)
+  10. Again search for the same or similar story
+  11. Extract the information if found
+  12. Compare the coverage of the story across the news sources:
+      - Differences in headline framing
+      - Differences in facts presented
+      - Differences in perspectives or quotes included
+      - Use of images or multimedia
+  
+  Your final report should include:
+  1. The original headlines from each site
+  2. A comparison table of key facts presented
+  3. Analysis of differences in framing or perspective
+  4. Your assessment of the most comprehensive coverage
+  5. Any interesting observations about how the story was presented differently
+
+# Online Shopping and Form Filling Task
+task5: |-
+  You are testing your ability to navigate e-commerce sites and complete forms.
+  
+  Execute the following steps in sequence:
+  
+  1. Navigate to a demo shopping site like https://www.demoblaze.com/
+  2. Browse the product categories (phones, laptops, monitors)
+  3. Select 2 different products from different categories
+  4. For each product, click to view details and note:
+     - Product name
+     - Price
+     - Description
+     - Features
+  5. Add both products to your cart
+  6. Navigate to the cart/checkout page
+  7. Begin the checkout process
+  8. Complete the checkout form with fictional information:
+     - Name: John Doe
+     - Country: United States
+     - City: Springfield
+     - Credit Card: 4111111111111111 (test number)
+     - Month: 12
+     - Year: 2025
+  9. Do NOT actually submit the order (stop before final confirmation)
+  10. Return to the homepage
+  11. Test the site's search functionality with the term "laptop"
+  12. Report on the search results accuracy
+  
+  Your task report should include:
+  1. Details of the products you selected
+  2. Screenshots or descriptions of the cart contents
+  3. Confirmation that you were able to fill out the form
+  4. Any errors or issues encountered during the process
+  5. Assessment of the site's usability and user experience
+
+# Complex Multi-site Research Task
+task6: |-
+  You are evaluating your ability to conduct complex research across multiple websites.
+  
+  Complete this challenging task with precision:
+  
+  1. Navigate to Wikipedia (https://www.wikipedia.org/)
+  2. Search for "Renewable Energy"
+  3. From the article, identify 3 main types of renewable energy sources
+  4. For each energy source, note:
+     - Basic definition
+     - Year of first significant use
+     - Current global capacity (if listed)
+  5. Open a new tab and navigate to the International Energy Agency (https://www.iea.org/)
+  6. Search for the most recent report on renewable energy
+  7. Extract key statistics about growth trends
+  8. Open another tab and navigate to the U.S. Energy Information Administration (https://www.eia.gov/)
+  9. Find data about renewable energy in the United States
+  10. Compare this data with the global data found earlier
+  11. Open a fourth tab and search Google Scholar for recent academic papers (past 2 years) on one of the renewable energy types
+  12. For the most cited paper found, extract:
+     - Title
+     - Authors
+     - Publication date
+     - Journal name
+     - Abstract
+  13. Compile all this information into a coherent research summary
+  
+  Your comprehensive report should include:
+  1. Definition and historical context for each renewable energy type
+  2. Current global and US-specific statistics
+  3. Growth trends based on the IEA data
+  4. Summary of recent academic research
+  5. Your analysis of which renewable energy type appears to be growing fastest
+  6. Challenges encountered during your research process

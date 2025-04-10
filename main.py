@@ -64,7 +64,7 @@ gemini = ChatGoogleGenerativeAI(model='gemini-2.0-flash', api_key=SecretStr(os.g
 remote_llm = ChatOpenAI(
     api_key="VLLM",
     base_url="http://192.168.0.44:8000/v1",
-    model="/app/model/DeepSeek-R1-Distill-Qwen-32B-FP8-dynamic", 
+    model="/app/model/watt-tool-70B-GPTQ-INT4", 
     temperature=0,
     model_kwargs={
         "tool_choice": "auto"  # Allows the model to decide when to use tools
@@ -108,7 +108,7 @@ async def run_login_automation():
         agent = Agent(
             browser_context=context,
             task=READ_PDF_TASK,  # Make sure this constant is defined elsewhere
-            llm=gemini,
+            llm=remote_llm,
             max_actions_per_step=1,
             max_failures=3,
             use_vision=False,  # Changed to True since you're likely doing visual tasks
@@ -205,16 +205,6 @@ if __name__ == '__main__':
         ]
     )
     
-    logger.info("Starting login automation...")
-    try:
-        result = asyncio.run(run_login_automation())
-        logger.info(f"Final result: {result}")
-    except KeyboardInterrupt:
-        logger.info("Process interrupted by user")
-    except Exception as e:
-        logger.error(f"Unhandled exception: {e}", exc_info=True)
-    logger.info("Automation process completed")
-if __name__ == '__main__':
     logger.info("Starting DeepMentor login automation...")
     try:
         result = asyncio.run(run_login_automation())
